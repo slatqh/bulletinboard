@@ -1,0 +1,10 @@
+include includes/header.pug
+div(class="container")
+  h1= title
+
+  each post in messages
+    div
+      h2= post.title
+      p= post.message_text
+   
+include includes/footer.pug

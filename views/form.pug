@@ -1,0 +1,17 @@
+include includes/header.pug
+
+div(class="container")
+  div
+     h1= title
+     
+     form(action="/add-message" method="get")
+       div
+         label= 'Title:'
+         input(type='text' name='title')
+       div
+         label= 'Message Text:'
+         textarea(name='message-text')
+       div
+         button(type='submit') Submit
+   
+include includes/footer.pug
